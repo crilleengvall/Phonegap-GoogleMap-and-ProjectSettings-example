@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D09B2EA152DEF6F008A44FF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 3D09B2E9152DEF6F008A44FF /* www */; };
 		3D65ED17152DD61E0044C3F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D65ED16152DD61E0044C3F9 /* Foundation.framework */; };
 		3D65ED19152DD61E0044C3F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D65ED18152DD61E0044C3F9 /* UIKit.framework */; };
 		3D65ED1B152DD61E0044C3F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D65ED1A152DD61E0044C3F9 /* CoreGraphics.framework */; };
@@ -38,10 +39,10 @@
 		3D65ED62152DD61E0044C3F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65ED61152DD61E0044C3F9 /* MainViewController.m */; };
 		3D65ED64152DD61E0044C3F9 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D65ED63152DD61E0044C3F9 /* MainViewController.xib */; };
 		3D65ED68152DD61E0044C3F9 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3D65ED67152DD61E0044C3F9 /* verify.sh */; };
-		3D65ED6F152DD62F0044C3F9 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 3D65ED6E152DD62F0044C3F9 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D09B2E9152DEF6F008A44FF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		3D65ED12152DD61E0044C3F9 /* PhonegapGoogleMapandProjectSettingsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonegapGoogleMapandProjectSettingsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D65ED16152DD61E0044C3F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D65ED18152DD61E0044C3F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -79,7 +80,6 @@
 		3D65ED63152DD61E0044C3F9 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		3D65ED66152DD61E0044C3F9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		3D65ED67152DD61E0044C3F9 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
-		3D65ED6E152DD62F0044C3F9 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 		3D65ED04152DD61E0044C3F9 = {
 			isa = PBXGroup;
 			children = (
-				3D65ED6E152DD62F0044C3F9 /* www */,
+				3D09B2E9152DEF6F008A44FF /* www */,
 				3D65ED30152DD61E0044C3F9 /* PhonegapGoogleMapandProjectSettingsExample */,
 				3D65ED15152DD61E0044C3F9 /* Frameworks */,
 				3D65ED13152DD61E0044C3F9 /* Products */,
@@ -333,7 +333,7 @@
 				3D65ED5B152DD61E0044C3F9 /* Cordova.plist in Resources */,
 				3D65ED64152DD61E0044C3F9 /* MainViewController.xib in Resources */,
 				3D65ED68152DD61E0044C3F9 /* verify.sh in Resources */,
-				3D65ED6F152DD62F0044C3F9 /* www in Resources */,
+				3D09B2EA152DEF6F008A44FF /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +547,7 @@
 				3D65ED6D152DD61E0044C3F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
