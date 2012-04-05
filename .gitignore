@@ -33,6 +33,7 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+IOS/www/
 
 # OSX
 .DS_Store
