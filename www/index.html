@@ -5,6 +5,8 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 	<meta charset="utf-8">
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="googlemap.js"></script>
 
 
 	<!-- iPad/iPhone specific css below, add after your main css >
@@ -41,8 +43,7 @@
 	}
 	*/
 	
-	function onBodyLoad()
-	{		
+	function onBodyLoad(){		
 		document.addEventListener("deviceready", onDeviceReady, false);
 	}
 	
@@ -52,19 +53,20 @@
 	for more details -jm */
 	function onDeviceReady()
 	{
-		// do your thing!
-		navigator.notification.alert("Cordova is working")
+        var map = new GoogleMap();
+        map.initialize();
 	}
     
     </script>
   </head>
   <body onload="onBodyLoad()">
-	<h1>Hey, it's Cordova!</h1>
-	<p>Don't know how to get started? Check out our <em><a target="_blank" href="http://docs.phonegap.com/en/1.4.1/guide_getting-started_ios_index.md.html#Getting%20Started%20with%20iOS">Getting Started Guide</a></em>
-	<br />
-	<ol>
-		<li>Check your console log for any white-list rejection errors.</li>
-		<li>Add your allowed <strong>hosts</strong> in Cordova.plist/ExternalHosts (wildcards OK, don't enter the URL scheme)</li>
-	</ol>
+      <div id="mapArea" style="margin: -15px -16px; 
+          width: 100%; 
+          height: 100%; 
+          border: 0px; 
+          position: absolute;">
+	</div>
   </body>
 </html>
+
+

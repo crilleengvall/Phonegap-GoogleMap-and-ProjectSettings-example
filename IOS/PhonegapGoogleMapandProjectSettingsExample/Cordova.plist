@@ -21,7 +21,11 @@
 	<key>OpenAllWhitelistURLsInWebView</key>
 	<false/>
 	<key>ExternalHosts</key>
-	<array/>
+	<array>
+		<string>*.google.com</string>
+		<string>*.googleapis.com</string>
+		<string>*.gstatic.com</string>
+	</array>
 	<key>Plugins</key>
 	<dict>
 		<key>org.apache.cordova.accelerometer</key>
