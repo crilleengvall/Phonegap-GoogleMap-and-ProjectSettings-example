@@ -37,7 +37,7 @@ function GoogleMap(){
 			     mapTypeId: google.maps.MapTypeId.ROADMAP
 			 }
 			 
-        var map = new google.maps.Map(document.getElementById("mapArea"), mapOptions);
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
         
         return map;
     }
