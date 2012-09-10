@@ -2,7 +2,9 @@
 
 
 if [ ! -d "$PROJECT_DIR/www" ] ; then
-	cp -R /Users/Shared/Cordova/Frameworks/Cordova.framework/www "$PROJECT_DIR"
+    if [ ! -d "$PROJECT_DIR/../www" ] ; then
+        cp -R /Users/Shared/Cordova/Frameworks/Cordova.framework/www "$PROJECT_DIR"
+    fi
 fi
 # detect www folder reference in project, if missing, print warning
 grep "{isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = \"<group>\"; };" "$PROJECT_DIR/$PROJECT_NAME.xcodeproj/project.pbxproj"
