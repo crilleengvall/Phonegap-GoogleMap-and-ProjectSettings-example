@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css"rel="stylesheet"type="text/css" />
 	<script type="text/javascript" src="googlemap.js"></script>
+    <script type="text/javascript" src="reachability.js"></script>
 
 
 	<!-- iPad/iPhone specific css below, add after your main css >
@@ -47,21 +48,28 @@
 	function onBodyLoad(){		
 		document.addEventListener("deviceready", onDeviceReady, false);
 	}
-	
+        
 	/* When this function is called, Cordova has been initialized and is ready to roll */
 	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
 	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
 	for more details -jm */
 	function onDeviceReady()
 	{
-        var map = new GoogleMap();
-        map.initialize();
-	}
+        var reachability = new Reachability();
+        if(reachability.IsNotConnected()){
+            navigator.notification.alert('No internet connection available',null, '', 'OK');
+        }
+        else{
+            var map = new GoogleMap();
+            map.initialize();
+        }
+    }
     
     </script>
   </head>
   <body onload="onBodyLoad()">
       <div id="map_canvas">
+          Couldn't load map because there was no internet connection available
 	</div>
   </body>
 </html>
